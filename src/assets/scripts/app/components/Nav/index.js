@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { IconOpen, IconClose, MobileMenu, Links, HomeLink } from "./BlocksNav";
+import {
+  IconOpen,
+  IconClose,
+  MobileLinks,
+  DesktopLinks,
+  HomeLink,
+} from "./BlocksNav";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +18,7 @@ const Nav = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"></div>
           <div>
             <div className="hidden sm:flex">
-              <Links />
+              <DesktopLinks />
             </div>
             <div className="sm:hidden">
               <button
@@ -28,7 +34,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      {isOpen ? <MobileMenu /> : ""}
+      {isOpen ? <MobileLinks /> : ""}
     </nav>
   );
 };

@@ -8,9 +8,9 @@ export const HomeLink = () => (
   </NavLink>
 );
 
-export const Links = () =>
+export const DesktopLinks = () =>
   routes.map(({ name, path }, key) => {
-    if (name !== "home") {
+    if (name !== "home" && name !== "404") {
       return (
         <div className="mx-2" key={key}>
           <NavLink to={path}>{name}</NavLink>
@@ -18,6 +18,14 @@ export const Links = () =>
       );
     }
   });
+
+export const MobileLinks = () => (
+  <div className="sm:hidden" id="mobile-menu">
+    <div className="px-2 pt-2 pb-3 space-y-1">
+      <DesktopLinks />
+    </div>
+  </div>
+);
 
 export const IconOpen = () => (
   <svg
@@ -52,16 +60,4 @@ export const IconClose = () => (
       d="M4 6h16M4 12h16M4 18h16"
     />
   </svg>
-);
-
-export const MobileMenu = () => (
-  <div className="sm:hidden" id="mobile-menu">
-    <div className="px-2 pt-2 pb-3 space-y-1">
-      {routes.map(({ name, path }, key) => (
-        <div className="mx-2" key={key}>
-          <NavLink to={path}>{name}</NavLink>
-        </div>
-      ))}
-    </div>
-  </div>
 );

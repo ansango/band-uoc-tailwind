@@ -16,4 +16,9 @@ export default [
     path: "/band",
     component: React.lazy(() => import("./Band")),
   },
+  {
+    name: "404",
+    path: "*",
+    component: React.lazy(() => import("./NotFound")),
+  },
 ];

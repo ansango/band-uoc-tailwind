@@ -35,3 +35,7 @@
 
 /* stylelint-disable-next-line scss/at-rule-no-unknown */
 @tailwind utilities;
+
+.style1 {
+  @apply text-xs;
+}

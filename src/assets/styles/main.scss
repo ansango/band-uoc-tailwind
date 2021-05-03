@@ -1,0 +1,37 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ *! BASE CONTENTS FOR ITCSS
+ *
+ ** SETTINGS - 01_settings"
+ *
+ ** TOOLS - 02_tools
+  *
+ ** GENERIC - 03_generic
+ *
+ ** ELEMENTS - 04_elements
+ *
+ ** OBJECTS - 05_objects
+ *
+ ** COMPONENTS - 06_components
+ *
+ ** TRUMPS - 07_trumps
+ */
+/* stylelint-disable-next-line scss/at-rule-no-unknown */
+@tailwind base;
+/* stylelint-disable-next-line scss/at-rule-no-unknown */
+@tailwind components;
+
+@import "01-settings/index";
+@import "02-tools/index";
+@import "03-generic/index";
+@import "04-elements/index";
+@import "05-objects/index";
+@import "06-components/index";
+@import "07-trumps/index";
+
+/* stylelint-disable-next-line scss/at-rule-no-unknown */
+@tailwind utilities;

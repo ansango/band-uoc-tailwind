@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { IconOpen, IconClose, MobileMenu, Links, HomeLink } from "./BlocksNav";
 
 const Nav = () => {

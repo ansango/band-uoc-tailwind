@@ -17,7 +17,7 @@ export const BlockOne = () => (
       </h3>
       <p className="mb-4">
         {
-          "We are not undefined an electronic collective from Berlin,Germany. We make noise and beautiful things. For bookings or any other information you can send us an email to:"
+          "We are not undefined an electronic collective from Berlin, Germany. We make noise and beautiful things. For bookings or any other information you can send us an email to:"
         }
       </p>
       <a href="mailto:info@notundefined.com">{"info@notundefined.com"}</a>

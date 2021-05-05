@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import routes from "../../views/routes";
+import routes from "../../routes";
 
 export const HomeLink = () => (
   <NavLink to="/" className="absolute inset-y-0 left-0 flex items-center">

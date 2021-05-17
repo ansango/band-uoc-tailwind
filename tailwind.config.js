@@ -7,6 +7,14 @@ module.exports = {
       serif: ["Permanent Marker", "cursive"],
       mono: ["Fira Code", "monospace"],
     },
+    minHeight: {
+      0: "0",
+      custom: "500px",
+      "1/4": "25%",
+      "1/2": "50%",
+      "3/4": "75%",
+      full: "100%",
+    },
     extend: {},
   },
   variants: {

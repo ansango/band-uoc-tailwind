@@ -13,6 +13,19 @@
   @apply h-60;
 }
 
+.card {
+  & .thumbnail {
+    & .layer {
+      @apply hidden;
+    }
+  }
+  & .thumbnail:hover {
+    & .layer {
+      @apply flex;
+    }
+  }
+}
+
 /* stylelint-disable */
 @tailwind utilities;
 /* stylelint-enable */

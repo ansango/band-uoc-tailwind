@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Quote = (props) => {
   return (
     <div
-      className={`max-w-2xl p-5 my-3 bg-white border-gray-300 shadow-md rounded-md text-${props.position}`}
+      className={`max-w-xl w-full p-5 my-3 bg-white border-gray-300 shadow-2xl rounded-lg text-${props.position}`}
     >
       <figure>
         <blockquote cite={props.url}>

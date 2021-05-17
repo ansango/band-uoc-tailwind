@@ -1,10 +1,11 @@
 import React from "react";
 import Title from "../components/Title";
+import Code from "../components/Code";
 import Hero from "../components/Hero";
 const Banner = () => (
   <div className="text-center py-52">
     <Title text={"a beat band"} />
-    <code className="font-bold text-6xl md:text-8xl xl:text-9xl">!==</code>
+    <Code />
   </div>
 );
 

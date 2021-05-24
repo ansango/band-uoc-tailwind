@@ -7,7 +7,7 @@ import Table from "../components/Table";
 import Gallery from "../components/Gallery";
 const Tour = () => {
   return (
-    <div>
+    <>
       <Parallax img={tour} title={"TOUR 2021"} />
       <div className="view">
         <div className="md:hidden max-w-lg mx-auto px-2">
@@ -22,7 +22,7 @@ const Tour = () => {
           <Gallery />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

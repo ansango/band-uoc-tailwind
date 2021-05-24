@@ -11,7 +11,7 @@ import {
 export const BlockOne = () => (
   <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 sm:flex flex-wrap">
     <div className="mb-10 md:px-5 w-full md:w-1/2 md:order-last">
-      <h3 className="mb-2 sm:mb-3 md:mb-4">
+      <h3 className="mb-2 sm:mb-3 md:mb-4 font-bold text-primary">
         <code>{"!"}</code>
         {"undefined"}
       </h3>
@@ -20,10 +20,12 @@ export const BlockOne = () => (
           "We are not undefined an electronic collective from Berlin, Germany. We make noise and beautiful things. For bookings or any other information you can send us an email to:"
         }
       </p>
-      <a href="mailto:info@notundefined.com">{"info@notundefined.com"}</a>
+      <a className="text-primary" href="mailto:info@notundefined.com">
+        {"info@notundefined.com"}
+      </a>
     </div>
-    <div className="mb-10 md:px-5 w-full sm:w-1/2 md:w-1/4">
-      <h3 className="mb-2 sm:mb-3 md:mb-4">{"Streaming"}</h3>
+    <div className="mb-10 md:px-5 w-full sm:w-1/2 md:w-1/4 text-primary">
+      <h3 className="mb-2 sm:mb-3 md:mb-4 font-bold">{"Streaming"}</h3>
       <a className="flex items-center" href="/#">
         <FaSpotify />
         <span className="mx-2">{"Spotify"}</span>
@@ -38,7 +40,9 @@ export const BlockOne = () => (
       </a>
     </div>
     <div className="mb-10 md:px-5 w-full sm:w-1/2 md:w-1/4">
-      <h3 className="mb-2 sm:mb-3 md:mb-4">{"Next date"}</h3>
+      <h3 className="mb-2 sm:mb-3 md:mb-4 font-bold text-primary">
+        {"Next date"}
+      </h3>
       <p className="mb-4">{"Saturday 02 September 2021"}</p>
       <p className="mb-4">{"Kindl-Bühne Wuhlheide, Berlin, Germany"}</p>
       <NavLink className="text-primary" to="/tour">
@@ -49,7 +53,7 @@ export const BlockOne = () => (
 );
 
 export const BlockTwo = () => (
-  <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 sm:flex items-center">
+  <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 sm:flex items-center text-primary">
     <div className="mb-3 text-center w-full sm:mb-0 sm:w-1/6">
       <NavLink to="/">
         <code>{"!"}</code>

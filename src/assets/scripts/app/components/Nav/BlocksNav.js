@@ -3,7 +3,10 @@ import { NavLink } from "react-router-dom";
 import routes from "../../routes";
 
 export const HomeLink = () => (
-  <NavLink to="/" className="absolute inset-y-0 left-0 flex items-center">
+  <NavLink
+    to="/"
+    className="absolute inset-y-0 left-0 flex items-center font-bold text-xl"
+  >
     <code>!</code>undefined
   </NavLink>
 );
@@ -12,7 +15,7 @@ export const DesktopLinks = () =>
   routes.map(({ name, path }, key) => {
     if (name !== "home" && name !== "404") {
       return (
-        <div className="mx-2" key={key}>
+        <div className="mx-2 text-primary font-bold" key={key}>
           <NavLink to={path}>{name}</NavLink>
         </div>
       );
@@ -20,7 +23,11 @@ export const DesktopLinks = () =>
   });
 
 export const MobileLinks = () => (
-  <div className="sm:hidden" id="mobile-menu">
+  <div
+    className="sm:hidden"
+    id="mobile-menu"
+    style={{ transition: "all 3s ease-in-out" }}
+  >
     <div className="px-2 pt-2 pb-3 space-y-1">
       <DesktopLinks />
     </div>
@@ -29,7 +36,7 @@ export const MobileLinks = () => (
 
 export const IconOpen = () => (
   <svg
-    className="h-6 w-6"
+    className="h-6 w-6 text-primary"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -46,7 +53,7 @@ export const IconOpen = () => (
 );
 export const IconClose = () => (
   <svg
-    className="h-6 w-6"
+    className="h-6 w-6 text-primary"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"

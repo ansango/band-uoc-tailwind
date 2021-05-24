@@ -6,7 +6,7 @@ const Card = (props) => {
     <div className="card w-full md:w-1/2 lg:w-1/3 flex mb-5">
       <div className="w-full flex justify-center">
         <div
-          className="thumbnail flex flex-column justify-center items-center w-80 h-80 bg-cover"
+          className="thumbnail flex flex-column justify-center items-center w-80 h-80 bg-cover border-8 border-gray-900"
           style={{
             backgroundImage: `url(${props.thumb})`,
           }}

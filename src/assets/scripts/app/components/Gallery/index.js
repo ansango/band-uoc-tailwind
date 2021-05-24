@@ -8,7 +8,7 @@ const Gallery = () => {
           <figure key={index}>
             <img
               src={image.url}
-              className="gallery-img transition hover:opacity-70 ease-in-out"
+              className="transition hover:opacity-70 ease-in-out"
               alt={image.name}
             />
           </figure>

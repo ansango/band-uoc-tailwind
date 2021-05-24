@@ -7,6 +7,9 @@ module.exports = {
       serif: ["Permanent Marker", "cursive"],
       mono: ["Fira Code", "monospace"],
     },
+    colors: {
+      primary: "#fd3075",
+    },
     minHeight: {
       0: "0",
       custom: "500px",

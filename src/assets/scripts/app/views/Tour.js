@@ -9,7 +9,7 @@ const Tour = () => {
   return (
     <div>
       <Parallax img={tour} title={"TOUR 2021"} />
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="view">
         <div className="md:hidden max-w-lg mx-auto px-2">
           {appoints.map((appoint, index) => {
             return <Ticket key={index} appoint={appoint} />;

@@ -2,6 +2,10 @@
   @apply max-w-7xl mx-auto px-2 pb-48 sm:px-6 lg:px-8;
 }
 
+.not-found {
+  @apply flex flex-col justify-center items-center h-96 pt-48;
+}
+
 .notes {
   @apply flex flex-col items-end;
 }

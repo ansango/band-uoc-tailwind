@@ -4,7 +4,8 @@ import routes from "../../routes";
 
 export const HomeLink = () => (
   <NavLink to="/" className="home-link">
-    <code>!</code>undefined
+    <code>{"!"}</code>
+    {"undefined"}
   </NavLink>
 );
 

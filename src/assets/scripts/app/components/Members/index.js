@@ -2,10 +2,6 @@ import React from "react";
 import members from "../../data/members";
 import Card from "../Card";
 
-const Members = () => {
-  return <div className="members">{band}</div>;
-};
-
 const band = members.map((member, index) => (
   <Card
     key={index}
@@ -18,5 +14,9 @@ const band = members.map((member, index) => (
     emoji={member.emoji}
   />
 ));
+
+const Members = () => {
+  return <div className="members">{band}</div>;
+};
 
 export default Members;

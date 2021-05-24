@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaTicketAlt } from "react-icons/fa";
+
 const Table = (props) => {
   const appoints = props.appoints.map((appoint, index) => {
     let date = `${appoint.date.month} ${appoint.date.day} ${appoint.date.dayWeek}`;

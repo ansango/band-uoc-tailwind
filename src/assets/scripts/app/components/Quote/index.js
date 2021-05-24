@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 const Quote = (props) => {
   return (
     <div className={`quote text-${props.position}`}>

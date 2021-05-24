@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./routes";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Loading from "./views/Loading";
 
 const routeComponents = routes.map(({ path, component }, key) => (
   <Route exact path={path} component={component} key={key} />
@@ -10,7 +11,7 @@ const routeComponents = routes.map(({ path, component }, key) => (
 
 const App = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<Loading />}>
       <Router>
         <Nav />
         <Switch>{routeComponents}</Switch>

@@ -1,3 +1,7 @@
+/* ------------------------------------ *\
+  #PARALLAX
+\* ------------------------------------ */
+
 .parallax {
   @apply flex items-center justify-center sm:justify-end min-h-custom m-auto mb-12 bg-fixed bg-center bg-cover;
   & > div {

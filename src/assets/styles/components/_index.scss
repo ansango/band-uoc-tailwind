@@ -1,8 +1,8 @@
 @import "navbar";
 @import "footer";
-.item {
-  @apply h-60;
-}
+@import "banner";
+@import "code";
+@import "hero";
 
 .card {
   & .thumbnail {

@@ -5,10 +5,7 @@ import contact from "../../../../images/hero/contact.jpg";
 import tour from "../../../../images/hero/tour.jpg";
 
 const Hero = () => (
-  <div
-    className="font-serif text-white text-6xl grid md:grid-cols-3"
-    style={{ backgroundImage: `url(${clouds})` }}
-  >
+  <div className="hero" style={{ backgroundImage: `url(${clouds})` }}>
     <BlockEmpty />
     <BlockEmpty />
     <BlockLink text={"tour"} path={"/tour"} img={tour} />

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-export const BlockEmpty = () => <div className="hidden md:block h-60"></div>;
+export const BlockEmpty = () => <div className="block-empty"></div>;
 export const BlockLink = (props) => {
   const [background, setBackground] = useState("");
   return (
     <NavLink
-      className="hidden w-full h-60 lg:h-72 xl:h-80 md:flex flex-col items-center justify-center"
+      className="block-link"
       style={{
         backgroundImage: `url(${background})`,
         backgroundPosition: "center",
@@ -17,7 +17,7 @@ export const BlockLink = (props) => {
       onMouseLeave={() => setBackground()}
       to={props.path}
     >
-      <h3 className="text-white">{props.text}</h3>
+      <h3>{props.text}</h3>
     </NavLink>
   );
 };
@@ -29,8 +29,8 @@ BlockLink.propTypes = {
 };
 
 export const BlockText = (props) => (
-  <div className="h-60 lg:h-72 xl:h-80 w-full flex flex-col items-center justify-center">
-    <h3 className="text-white">{props.text}</h3>
+  <div className="block-text">
+    <h3>{props.text}</h3>
   </div>
 );
 

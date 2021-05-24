@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Title from "../Title";
 import Code from "../Code";
 const Banner = (props) => (
-  <div className="text-center py-52">
+  <div className="banner">
     <Title text={props.title} />
     {props.isCode && <Code />}
   </div>

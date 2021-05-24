@@ -9,19 +9,17 @@ const Ticket = (props) => {
   let place = `${appoint.location[0].place}`;
   let event = `${place} | ${time}`;
   return (
-    <div className="mb-5">
-      <div className="flex justify-between p-4 border border-gray rounded-md">
+    <div className="ticket">
+      <div>
         <div>
-          <p className="mb-4">{date}</p>
-          <p className="mb-4">{event}</p>
-          <p className="mb-4">{country}</p>
-          <button className="bg-primary rounded-md px-3 py-2 text-white">
-            Tickets
-          </button>
+          <p>{date}</p>
+          <p>{event}</p>
+          <p>{country}</p>
+          <button>Tickets</button>
         </div>
-        <div className="text-primary">
+        <span>
           <FaTicketAlt size={20} />
-        </div>
+        </span>
       </div>
     </div>
   );

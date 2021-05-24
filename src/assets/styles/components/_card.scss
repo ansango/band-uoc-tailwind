@@ -31,3 +31,19 @@
     }
   }
 }
+
+.ticket {
+  @apply mb-5;
+  & > div {
+    @apply flex justify-between p-4 border border-gray rounded-md;
+  }
+  & p {
+    @apply mb-4;
+  }
+  & button {
+    @apply bg-primary rounded-md px-3 py-2 text-white;
+  }
+  & span {
+    @apply text-primary;
+  }
+}

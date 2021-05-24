@@ -16,3 +16,11 @@
     @apply font-serif py-6 text-3xl;
   }
 }
+
+.appoints-mobile {
+  @apply md:hidden max-w-lg mx-auto px-2;
+}
+
+.appoints-tablet {
+  @apply hidden md:flex justify-center;
+}

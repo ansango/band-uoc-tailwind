@@ -4,6 +4,7 @@ import Ticket from "../components/Card/ticket";
 import appoints from "../data/appoints";
 import tour from "../../../images/parallax/tour.jpg";
 import Table from "../components/Table";
+import Gallery from "../components/Gallery";
 const Tour = () => {
   return (
     <div>
@@ -16,6 +17,9 @@ const Tour = () => {
         </div>
         <div className="hidden md:flex justify-center">
           <Table appoints={appoints} />
+        </div>
+        <div className="max-w-lg md:max-w-none mx-auto px-2 py-10">
+          <Gallery />
         </div>
       </div>
     </div>

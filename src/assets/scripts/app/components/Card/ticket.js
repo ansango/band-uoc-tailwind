@@ -10,16 +10,16 @@ const Ticket = (props) => {
   let event = `${place} | ${time}`;
   return (
     <div className="mb-5">
-      <div className="flex justify-between p-4 border border-gray-300 rounded-md">
+      <div className="flex justify-between p-4 border border-gray rounded-md">
         <div>
           <p className="mb-4">{date}</p>
           <p className="mb-4">{event}</p>
           <p className="mb-4">{country}</p>
-          <button className="bg-black rounded-md px-3 py-2 text-white">
+          <button className="bg-primary rounded-md px-3 py-2 text-white">
             Tickets
           </button>
         </div>
-        <div>
+        <div className="text-primary">
           <FaTicketAlt size={20} />
         </div>
       </div>

@@ -53,7 +53,7 @@ const Band = () => {
       <div className="py-52 text-center">
         <Code />
       </div>
-      <div className="py-52 flex flex-wrap w-full mx-auto md:max-w-3xl lg:max-w-5xl">
+      <div className="pb-52 flex flex-wrap w-full mx-auto md:max-w-3xl lg:max-w-5xl">
         {band}
       </div>
       <div className="py-5">{bio}</div>

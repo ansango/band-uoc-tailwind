@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
   purge: [],
   darkMode: false,
@@ -9,7 +10,8 @@ module.exports = {
     },
     colors: {
       primary: "#fd3075",
-      white: "#ffffff",
+      white: colors.white,
+      gray: colors.gray[300],
     },
     minHeight: {
       0: "0",

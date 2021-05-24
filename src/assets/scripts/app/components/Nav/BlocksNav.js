@@ -3,10 +3,7 @@ import { NavLink } from "react-router-dom";
 import routes from "../../routes";
 
 export const HomeLink = () => (
-  <NavLink
-    to="/"
-    className="absolute inset-y-0 left-0 flex items-center font-bold text-xl"
-  >
+  <NavLink to="/" className="home-link">
     <code>!</code>undefined
   </NavLink>
 );
@@ -15,7 +12,7 @@ export const DesktopLinks = () =>
   routes.map(({ name, path }, key) => {
     if (name !== "home" && name !== "404") {
       return (
-        <div className="mx-2 text-primary font-bold" key={key}>
+        <div className="link" key={key}>
           <NavLink to={path}>{name}</NavLink>
         </div>
       );
@@ -23,14 +20,8 @@ export const DesktopLinks = () =>
   });
 
 export const MobileLinks = () => (
-  <div
-    className="sm:hidden"
-    id="mobile-menu"
-    style={{ transition: "all 3s ease-in-out" }}
-  >
-    <div className="px-2 pt-2 pb-3 space-y-1">
-      <DesktopLinks />
-    </div>
+  <div className="mobile-menu">
+    <DesktopLinks />
   </div>
 );
 

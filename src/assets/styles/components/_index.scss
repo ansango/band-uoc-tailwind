@@ -1,0 +1,18 @@
+@import "navbar";
+@import "footer";
+.item {
+  @apply h-60;
+}
+
+.card {
+  & .thumbnail {
+    & .layer {
+      @apply hidden;
+    }
+  }
+  & .thumbnail:hover {
+    & .layer {
+      @apply flex;
+    }
+  }
+}

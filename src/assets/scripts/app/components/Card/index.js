@@ -14,15 +14,15 @@ const Card = (props) => {
           <div className="layer bg-white w-full h-full flex-col justify-center items-center">
             <div>
               <h5 className="flex items-center font-bold text-lg">
-                <span className="mr-2">{props.emoji}</span>
+                <span className="mr-2 text-primary">{props.emoji}</span>
                 <span>{props.name}</span>
               </h5>
               <h6 className="flex items-center">
-                <span className="mr-2">{props.icon}</span>
+                <span className="mr-2 text-primary">{props.icon}</span>
                 <span>{props.position}</span>
               </h6>
               <p className="flex items-center">
-                <span className="mr-2">
+                <span className="mr-2 text-primary">
                   <FaHeart />
                 </span>
                 <span>{props.love}</span>
@@ -30,7 +30,7 @@ const Card = (props) => {
             </div>
 
             <a
-              className="twitter mt-4"
+              className="twitter mt-4 text-primary"
               href={props.twitter}
               target="_blank"
               rel="noreferrer"

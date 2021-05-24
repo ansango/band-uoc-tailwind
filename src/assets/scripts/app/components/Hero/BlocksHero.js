@@ -17,7 +17,7 @@ export const BlockLink = (props) => {
       onMouseLeave={() => setBackground()}
       to={props.path}
     >
-      <h3>{props.text}</h3>
+      <h3 className="text-white">{props.text}</h3>
     </NavLink>
   );
 };
@@ -30,7 +30,7 @@ BlockLink.propTypes = {
 
 export const BlockText = (props) => (
   <div className="h-60 lg:h-72 xl:h-80 w-full flex flex-col items-center justify-center">
-    <h3>{props.text}</h3>
+    <h3 className="text-white">{props.text}</h3>
   </div>
 );
 

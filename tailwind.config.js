@@ -9,6 +9,7 @@ module.exports = {
     },
     colors: {
       primary: "#fd3075",
+      white: "#ffffff",
     },
     minHeight: {
       0: "0",

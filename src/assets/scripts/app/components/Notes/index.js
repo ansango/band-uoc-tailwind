@@ -3,7 +3,7 @@ import quotes from "../../data/quotes";
 import Quote from "../Quote";
 
 const Notes = () => {
-  return <div className="flex flex-col items-end">{notes}</div>;
+  return <div className="notes">{notes}</div>;
 };
 
 const notes = quotes.map((quote, index) => (

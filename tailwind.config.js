@@ -12,6 +12,7 @@ module.exports = {
       primary: "#fd3075",
       white: colors.white,
       gray: colors.gray[300],
+      black: colors.black,
     },
     minHeight: {
       0: "0",

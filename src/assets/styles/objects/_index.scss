@@ -2,6 +2,10 @@
   @apply max-w-7xl mx-auto px-2 pb-48 sm:px-6 lg:px-8;
 }
 
+.notes {
+  @apply flex flex-col items-end;
+}
+
 .members {
   @apply pb-52 flex flex-wrap w-full mx-auto md:max-w-3xl lg:max-w-5xl;
 }

@@ -3,16 +3,5 @@
 @import "banner";
 @import "code";
 @import "hero";
-
-.card {
-  & .thumbnail {
-    & .layer {
-      @apply hidden;
-    }
-  }
-  & .thumbnail:hover {
-    & .layer {
-      @apply flex;
-    }
-  }
-}
+@import "quote";
+@import "card";
